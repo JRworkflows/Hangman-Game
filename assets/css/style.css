@@ -1,0 +1,109 @@
+html {
+    background-color: #EB3131;
+}
+
+#mainBody {
+    height: 650px;
+    background-color: #B8EC5F;
+}
+
+header {
+    width: 100%;
+    background-color: #3149E6;
+    margin-top: 15%;
+}
+
+#hmWord {
+    line-height: 78px;
+    font-size: 78px;
+    font-family: 'Fontdiner Swanky', cursive;
+    text-align: center;
+    background-color: #B8EC5F;
+    margin-bottom: 26px;
+}
+
+#numWord {
+    line-height: 48px;
+    font-size: 32px;
+    font-family: 'Condiment', cursive;
+    text-align: center;
+    background-color: #B8EC5F;
+}
+
+#fgPic {
+    margin: 87px 0px 0px 0px;
+    width: 100%;
+    height: 330px;
+}
+
+#gameScore,
+#gameScore2 {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    /* padding-top: 8px; */
+}
+
+#hmStart {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Condiment', cursive;
+    margin-top: 12px;
+    line-height: 47px;
+}
+
+#borderDiv {
+    height: 500px;
+    /* background-color: #3149E6; */
+}
+
+#midBorder1 {
+    height: 491px;
+    width: 5px;
+    background-color: #3149E6;
+    margin: auto;
+}
+
+#underScores {
+    line-height: 78px;
+    font-size: 52px;
+    font-family: 'Fontdiner Swanky', cursive;
+    text-align: center;
+    background-color: #B8EC5F;
+    margin-bottom: 26px;
+}
+
+#remainGuess {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Condiment', cursive;
+    margin-top: -235px;
+    line-height: 47px;
+}
+
+#lettersGuessed {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Condiment', cursive;
+    margin-top: 70px;
+    line-height: 47px;
+}
+
+@media only screen and (max-width: 752px) {
+    #gameScore {
+        line-height: 39px;
+        font-size: 39px;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    #hmStart {
+        line-height: 24px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-height: 491px) {
+    #midBorder1 {
+        display: hide;
+    }
+}

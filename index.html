@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lets Play Hangman!</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Condiment|Faster+One|Fontdiner+Swanky|Freckle+Face" rel="stylesheet">
+</head>
+
+<body id="mainBody">
+
+    <header>
+
+        <div class="container" id="gameTitle">
+            <div class="row">
+                <div class="col-md-12" id="tWords">
+                    <h1 id="hmWord">Hangman</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="bWords">
+                    <h1 id="numWord">21st Century Edition</h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container" id="gameCont">
+
+        <div class="row" id="gameIntro">
+            <div class="col-md-4">
+                <img src="https://i.ytimg.com/vi/OB6nM7l4oLY/maxresdefault.jpg" alt="A picture of futuristic gaming" class="rounded mx-auto d-block" id="fgPic">
+            </div>
+            <div class="col-md-4" id="borderDiv">
+                <div id="midBorder1"></div>
+            </div>
+            <div class="col-md-4">
+                <h2 id="hmStart">Press any letter to take your first guess!</h2>
+                <h1 id="gameScore">Wins</h1>
+
+                <div class="winCount"></div>
+
+                <h2 id="gameScore2">Current Word</h2>
+                <div id="underScores">_ _ _ _ _ _</div>
+
+
+
+            </div>
+        </div>
+
+        <div class="row" id="interActive">
+            <div class="col-md-4" id="emptyDiv1"></div>
+            <div class="col-md-4" id="emptyDiv2"></div>
+            <div class="col-md-4" id="textDiv">
+                <h2 id="remainGuess">Number of Guesses Remaining</h2>
+                <h2 id="lettersGuessed">Letters Guessed So Far</h2>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
