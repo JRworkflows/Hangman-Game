@@ -64,6 +64,7 @@ header {
 }
 
 #underScores {
+    color: black;
     line-height: 78px;
     font-size: 52px;
     font-family: 'Fontdiner Swanky', cursive;
@@ -102,8 +103,8 @@ header {
     }
 }
 
-@media only screen and (max-height: 491px) {
+@media only screen and (min-width: 491px) {
     #midBorder1 {
-        display: hide;
+        display: none;
     }
 }

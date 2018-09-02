@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+<!-- Meta Data and Links -->
 
 <head>
     <meta charset="utf-8" />
     <title>Lets Play Hangman!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Condiment|Faster+One|Fontdiner+Swanky|Freckle+Face" rel="stylesheet">
 </head>
+<!-- Content Structure -->
 
 <body id="mainBody">
 
     <header>
-
+        <!-- This is the double header in the upper middle section of the page -->
         <div class="container" id="gameTitle">
             <div class="row">
                 <div class="col-md-12" id="tWords">
@@ -28,7 +30,7 @@
         </div>
 
     </header>
-
+    <!-- Main Content Row/ Columns -->
     <div class="container" id="gameCont">
 
         <div class="row" id="gameIntro">
@@ -42,27 +44,30 @@
                 <h2 id="hmStart">Press any letter to take your first guess!</h2>
                 <h1 id="gameScore">Wins</h1>
 
-                <div class="winCount"></div>
+                <div class="win-count" id="winCount"></div>
 
                 <h2 id="gameScore2">Current Word</h2>
-                <div id="underScores">_ _ _ _ _ _</div>
-
+                <div id="underScores"></div>
 
 
             </div>
         </div>
-
+        <!-- Scores/ Viewing Content -->
         <div class="row" id="interActive">
             <div class="col-md-4" id="emptyDiv1"></div>
             <div class="col-md-4" id="emptyDiv2"></div>
             <div class="col-md-4" id="textDiv">
-                <h2 id="remainGuess">Number of Guesses Remaining</h2>
-                <h2 id="lettersGuessed">Letters Guessed So Far</h2>
+
+                <div class="guessCount"></div>
+                <div class="letterGuess"></div>
             </div>
         </div>
 
 
     </div>
+
+    <script src="assets/javascript/game.js">
+    </script>
 </body>
 
 </html>
