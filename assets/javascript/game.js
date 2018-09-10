@@ -124,8 +124,11 @@ var songTrivia = {
 // startHangman();
 
 document.onkeydown = function(p) {
-    songTrivia.letterGuessed = p.key
-    songTrivia.subLetter(songTrivia.letterGuessed)
+    songTrivia.letterGuessed = p.key;
+    songTrivia.updateGuessedLetters(songTrivia.letterGuessed);
+    songTrivia.subLetter(songTrivia.letterGuessed);
+    songTrivia.generateUnderscore();
+    songTrivia.gameCheck();
 }
 
 
